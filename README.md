@@ -58,7 +58,7 @@ streamlit run src/app.py
 
 5. **Streamlit Frontend** (`app.py`)  
    Orchestrates image upload, feature/embedding extraction, PCA transformation, model prediction, and displays results.
-```
+
 
 
 
