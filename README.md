@@ -6,16 +6,17 @@ A Streamlit + OpenCV pipeline that combines handcrafted features, MobileNetV3 CN
 
 ## 📂 Project Structure
 
-egg-crack-detection/ # Root folder
+```text
+egg-crack-detection/        # Root folder
 ├── src/
-│ ├── app.py # Streamlit interface: uploads image, runs pipeline, shows output
-│ ├── extract_features.py # Extracts handcrafted OpenCV features (edges, contours, textures)
-│ ├── extract_embeddings.py # Generates CNN embeddings using MobileNetV3
-│ ├── cnn_embeddings.csv # (Local-only) Stores embeddings for training—ignored via .gitignore
-│ ├── pca.pkl # (Local-only) PCA model to reduce embedding dimensions—ignored via .gitignore
-│ ├── model.pkl # Final trained XGBoost classifier used by app.py
-├── requirements.txt # List of Python dependencies
-├── .gitignore # Excludes large files and folders (e.g. venv/, Data/, cnn_embeddings.csv, pca.pkl)
-└── README.md # This documentation file
+│   ├── app.py               # Streamlit interface: upload image, run pipeline, show output
+│   ├── extract_features.py  # Extracts handcrafted OpenCV features (edges, contours, textures)
+│   ├── extract_embeddings.py# Generates CNN embeddings using MobileNetV3
+│   ├── cnn_embeddings.csv   # (Local‑only) Embeddings per image—ignored via .gitignore
+│   ├── pca.pkl              # (Local‑only) PCA model for dimensionality reduction—ignored
+│   ├── model.pkl            # Trained XGBoost classifier used by app.py
+├── requirements.txt         # Python dependencies
+├── .gitignore               # Excludes venv/, Data/, embeddings & pickle files
+└── README.md                # This documentation file
 
 
