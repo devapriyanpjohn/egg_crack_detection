@@ -18,5 +18,22 @@ egg-crack-detection/        # Root folder
 ├── requirements.txt         # Python dependencies
 ├── .gitignore               # Excludes venv/, Data/, embeddings & pickle files
 └── README.md                # This documentation file
+```
+## 🔧 Installation
+
+```bash
+git clone https://github.com/your-username/egg-crack-detection.git
+cd egg-crack-detection
+python -m venv venv
+
+# On Windows
+venv\Scripts\activate
+
+# On macOS/Linux
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+
 
 
