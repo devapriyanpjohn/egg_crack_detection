@@ -1,0 +1,14 @@
+# Ignore virtual environment
+venv/
+Data/
+
+# Python artifacts
+__pycache__/
+*.pyc
+.env
+
+# CSV embeddings
+src/cnn_embeddings.csv
+
+# Ignore PCA pickle
+src/pca.pkl
