@@ -33,6 +33,39 @@ venv\Scripts\activate
 source venv/bin/activate
 
 pip install -r requirements.txt
+```
+## 🚀 Run the App
+```bash
+streamlit run src/app.py
+
+The app will open in your browser.
+
+Upload an egg image.
+
+View the prediction: “cracked” or “normal” with handcrafted features.
+```
+## 🛠 How It Works
+```bash
+Handcrafted Features (extract_features.py)
+
+Uses OpenCV to compute edge density, contour shapes, and texture descriptors.
+
+CNN Embeddings (extract_embeddings.py)
+
+Uses MobileNetV3 to extract high‑level image embeddings, saved locally to cnn_embeddings.csv.
+
+PCA Reduction (pca.pkl)
+
+Applies Principal Component Analysis to reduce embedding dimensions for faster inference.
+
+XGBoost Classifier (model.pkl)
+
+Trained on combined handcrafted features and PCA‑reduced embeddings to classify egg integrity.
+
+Streamlit Frontend (app.py)
+
+Orchestrates image upload, feature/embedding extraction, PCA transformation, model prediction, and displays results.
+```
 
 
 
