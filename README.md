@@ -60,8 +60,9 @@ streamlit run src/app.py
    Orchestrates image upload, feature/embedding extraction, PCA transformation, model prediction, and displays results.
 
 ## Live Demo
+```bash
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://<your-app-subdomain>.streamlit.app](https://eggcrackdetection-ag5s46tgu2fcahkriej7as.streamlit.app/))
-
+```
 
 
 
