@@ -10,5 +10,3 @@ __pycache__/
 # CSV embeddings
 src/cnn_embeddings.csv
 
-# Ignore PCA pickle
-src/pca.pkl
