@@ -59,8 +59,9 @@ streamlit run src/app.py
 5. **Streamlit Frontend** (`app.py`)  
    Orchestrates image upload, feature/embedding extraction, PCA transformation, model prediction, and displays results.
 
-## 🔍 Try the App
-[Open Egg Crack Detection App]([https://<your-app-subdomain>.streamlit.app](https://eggcrackdetection-ag5s46tgu2fcahkriej7as.streamlit.app/))
+## Live Demo
+Click [here]([https://<your-app-subdomain>.streamlit.app](https://eggcrackdetection-ag5s46tgu2fcahkriej7as.streamlit.app/)) to view the deployed Streamlit app.
+
 
 
 
