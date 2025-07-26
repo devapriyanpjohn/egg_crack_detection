@@ -10,9 +10,9 @@ from PIL import Image
 from torchvision import transforms
 
 # Load models and objects
-model = joblib.load("xgb_model.pkl")
-pca = joblib.load("pca.pkl")
-scaler = joblib.load("scaler.pkl")
+model = joblib.load("src/xgb_model.pkl")
+pca = joblib.load("src/pca.pkl")
+scaler = joblib.load("src/scaler.pkl")
 
 # Load MobileNetV3 model for embedding extraction
 mobilenet = timm.create_model('mobilenetv3_large_100', pretrained=True, features_only=True)
